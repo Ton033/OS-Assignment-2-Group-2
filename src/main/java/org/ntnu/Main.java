@@ -6,8 +6,6 @@ import org.ntnu.booking.MovieTicketServer;
 public class Main {
 	public static void main(String[] args) {
 		MovieTicketServer movieTicketServer = new MovieTicketServer("Dune 2", 10);
-
-
 		//4 new threads
 		Thread t1 = new MovieTicketClient(movieTicketServer, "Tony", 3);
 		Thread t2 = new MovieTicketClient(movieTicketServer, "Jonas", 2);
